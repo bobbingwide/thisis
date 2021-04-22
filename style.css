@@ -1,0 +1,23 @@
+/*
+Theme Name: This is...
+Theme URI: https://
+Author: Herb Miller
+Description: This is Full Site Editing. Experimental FSE demonstration theme
+Requires at least: 5.7
+Tested up to: 5.7
+Requires PHP: 7.4
+Version: 0.0.0
+License: GNU General Public License v2 or later
+License URI: http://www.gnu.org/licenses/gpl-2.0.html
+Text Domain: thisis
+*/
+
+/**
+The starting point for this theme is that it doesn't contain any CSS at all
+The idea is that the styling is provided using the global styles solution
+which is implemented in experimental-theme.json
+
+Since this file doesn't actually contain any CSS then there's no need to enqueue it in functions.php
+We can probably even get away with not having a functions.php file.
+
+*/
