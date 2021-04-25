@@ -73,6 +73,7 @@ function thisis_loaded() {
 	add_action( 'after_setup_theme', 'thisis_support' );
 	add_action( 'wp_enqueue_scripts', 'thisis_scripts' );
 	add_action( 'init', 'thisis_init', 20 );
+
 }
 
 /**
@@ -91,7 +92,7 @@ function thisis_init() {
 
 
 
-//require_once __DIR__ . '/includes/block-overrides.php';
+
 
 /**
  * Implements [post-edit] shortcode.
@@ -115,5 +116,7 @@ function thisis_post_edit( $attrs, $content, $tag ) {
 
 	return $link;
 }
+
+require_once __DIR__ . '/includes/block-overrides.php';
 
 thisis_loaded();
