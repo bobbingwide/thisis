@@ -20,4 +20,17 @@ which is implemented in experimental-theme.json.
 In practice, we need some CSS since the browser defaults need a little overriding.
 */
 
+/**
+ Override the 8px margin from user agent stylesheet
+ */
 body { margin: 0px; }
+
+/**
+Override top and bottom margins on h1 - user agent stylesheet
+ */
+h1 { margin-block-start: 0px; margin-block-end: 0px;}
+
+/**
+Override margin bottom added by Gutenberg inline styling
+ */
+.wp-block-columns { margin-bottom: 0px;}
