@@ -1,25 +1,47 @@
-<!-- wp:spacer -->
-<div style="height:100px" aria-hidden="true" class="wp-block-spacer"></div>
-<!-- /wp:spacer -->
+<!-- wp:template-part {"slug":"header","theme":"thisis","layout":{"inherit":false,"contentSize":"100%"}} /-->
 
-<!-- wp:template-part {"slug":"header","theme":"thisis","layout":{"contentSize":"80%"}} /-->
+<!-- wp:site-title {"style":{"color":{"link":"var:preset|color|background"},"typography":{"lineHeight":"0.7"}},"backgroundColor":"bold-blue"} /-->
 
-<!-- wp:group {"layout":{"contentSize":"70%"}} -->
-<div class="wp-block-group"><!-- wp:query {"queryId":3,"query":{"perPage":1,"pages":0,"offset":0,"postType":"post","categoryIds":[],"tagIds":[],"order":"desc","orderBy":"date","author":"","search":"","exclude":[],"sticky":"","inherit":true}} -->
-<!-- wp:query-loop -->
-<!-- wp:columns {"align":"wide"} -->
-<div class="wp-block-columns alignwide"><!-- wp:column {"width":"66.66%"} -->
-<div class="wp-block-column" style="flex-basis:66.66%"><!-- wp:post-featured-image {"isLink":true} /--></div>
-<!-- /wp:column -->
+<!-- wp:post-content /-->
 
-<!-- wp:column {"width":"33.33%"} -->
-<div class="wp-block-column" style="flex-basis:33.33%"><!-- wp:post-title {"isLink":true} /-->
+<!-- wp:columns -->
+<div class="wp-block-columns"><!-- wp:column -->
+    <div class="wp-block-column"><!-- wp:heading -->
+        <h2>Videos</h2>
+        <!-- /wp:heading -->
 
-<!-- wp:post-excerpt /-->
+        <!-- wp:query {"queryId":4,"query":{"perPage":10,"pages":0,"offset":0,"postType":"post","categoryIds":[6],"tagIds":[],"order":"desc","orderBy":"date","author":"","search":"","exclude":[],"sticky":"","inherit":false},"layout":{"type":"list"}} -->
+        <!-- wp:query-loop -->
+        <!-- wp:columns {"verticalAlignment":"center"} -->
+        <div class="wp-block-columns are-vertically-aligned-center"><!-- wp:column {"verticalAlignment":"center","width":"25%"} -->
+            <div class="wp-block-column is-vertically-aligned-center" style="flex-basis:25%"><!-- wp:post-featured-image {"isLink":true} /--></div>
+            <!-- /wp:column -->
 
-<!-- wp:post-content /--></div>
-<!-- /wp:column --></div>
+            <!-- wp:column {"verticalAlignment":"center","width":"75%"} -->
+            <div class="wp-block-column is-vertically-aligned-center" style="flex-basis:75%"><!-- wp:post-title {"isLink":true} /--></div>
+            <!-- /wp:column --></div>
+        <!-- /wp:columns -->
+        <!-- /wp:query-loop -->
+        <!-- /wp:query --></div>
+    <!-- /wp:column -->
+
+    <!-- wp:column -->
+    <div class="wp-block-column"><!-- wp:heading -->
+        <h2>FSE is...</h2>
+        <!-- /wp:heading -->
+
+        <!-- wp:query {"queryId":8,"query":{"perPage":10,"pages":0,"offset":0,"postType":"post","categoryIds":[4],"tagIds":[],"order":"desc","orderBy":"date","author":"","search":" ","exclude":[],"sticky":"","inherit":false}} -->
+        <!-- wp:query-loop -->
+        <!-- wp:post-title {"isLink":true} /-->
+
+        <!-- wp:post-excerpt /-->
+
+        <!-- wp:post-date /-->
+        <!-- /wp:query-loop -->
+        <!-- /wp:query --></div>
+    <!-- /wp:column --></div>
 <!-- /wp:columns -->
-<!-- /wp:query-loop -->
-<!-- /wp:query --></div>
-<!-- /wp:group -->
+
+<!-- wp:template-part {"slug":"footer","theme":"thisis"} /-->
+
+<!-- wp:template-part {"slug":"quixote","theme":"thisis"} /-->

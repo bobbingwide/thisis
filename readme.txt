@@ -1,16 +1,16 @@
-# thisis 
-* Contributors: bobbingwide, vsgloik
-* Donate link: https://www.oik-plugins.com/oik/oik-donate/
-* Tags: blocks, FSE, Gutenberg
-* Requires at least: 5.7
-* Tested up to: 5.7.1
-* Version: 0.1.0
-* License: GPLv2 or later
-* License URI: http://www.gnu.org/licenses/gpl-2.0.html
+=== thisis ===
+Contributors: bobbingwide, vsgloik
+Donate link: https://www.oik-plugins.com/oik/oik-donate/
+Tags: blocks, FSE, Gutenberg
+Requires at least: 5.7
+Tested up to: 5.7.1
+Version: 0.1.0
+License: GPLv2 or later
+License URI: http://www.gnu.org/licenses/gpl-2.0.html
 
 ThisIs... - experimental Full Site Editing
 
-## Description 
+== Description ==
 ThisIs is an experimental theme attempting to implement Full Site Editing (FSE) with Gutenberg blocks.
 
 Its original purpose was to help prepare "A guide to Full Site Editing, blocks and themes".
@@ -49,9 +49,9 @@ IMAGES:
 
 Some photos used when creating content.
 
-* See the template visualization: https://developer.wordpress.org/files/2014/10/Screenshot-2019-01-23-00.20.04.png
+See the template visualization: https://developer.wordpress.org/files/2014/10/Screenshot-2019-01-23-00.20.04.png
 
-## Installation 
+== Installation ==
 
 * Install and activate pre-requisite plugins.
 * Either install Gutenberg 10.4.1 or higher or install and build the latest Gutenberg source.
@@ -59,16 +59,16 @@ Some photos used when creating content.
 * Install and activate the thisis theme, as you would install any other theme. Full Site Editing will be enabled automatically.
 
 
-## Change Log 
-# 0.1.0 
+== Change Log ==
+= 0.1.0 =
 * Tested: With Gutenberg 10.4.1
 * Tested: With WordPress 5.7.1 and WordPress Multi Site
 * Tested: With PHP 8.0
 
-# 0.0.0 
+= 0.0.0 =
 * Added:
 
-### Block overrides 
+=== Block overrides ===
 thisis may contain a number of overrides to Gutenberg server rendered blocks which didn't behave the way I expected.
 These overrides should continue to work even when the PRs to fix the bugs have been implemented.
 
@@ -76,7 +76,7 @@ These overrides may have been copied / cobbled from Fizzie and SB.
 
 * core/template-part - does not call `wpautop()`
 
-## References 
+== References ==
 See my articles on herbmiller.me:
 
 - [Localization of Full Site Editing themes](https://herbmiller.me/localization-of-full-site-editing-themes/)
@@ -86,17 +86,17 @@ For other articles see the [Fizzie theme's readme](https://github.com/bobbingwid
 
 For some other FSE themes see [WP-a2z FSE themes](https://blocks.wp-a2z.org/oik-themes)
 
-## Brief development history 
+== Brief development history ==
 thisis is my third attempt to develop a theme using Full Site Editing.
 It's the first one where I tried to use the Site Editor to build the theme.
 Some of the templates and template parts that I build are exported to `.htm` files.
 Since the file extensions are not `.html` then these files will not be found by the
 Site Editor until manually renamed.
 
-## Copyright 
+== Copyright ==
 (C) Copyright Herb Miller, Bobbing Wide 2021
 
-* This program is free software: you can redistribute it and/or modify
+This program is free software: you can redistribute it and/or modify
 it under the terms of the GNU General Public License as published by
 the Free Software Foundation, either version 2 of the License, or
 (at your option) any later version.
