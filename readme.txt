@@ -40,6 +40,7 @@ SAMPLES:
 
 The files provided as samples have a file extension of  `.htm`.
 
+
 SCREENSHOTS:
 
 A series of screenshots taken at different stages of the theme's development.
