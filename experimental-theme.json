@@ -22,6 +22,10 @@
             "name": "Link",
             "color": "#3498db"
           },
+          { "slug":  "current-menu",
+            "name": "Current menu",
+            "color": "#00a0d2"
+          },
           {
             "slug": "site-header-background",
             "name": "Blue",
