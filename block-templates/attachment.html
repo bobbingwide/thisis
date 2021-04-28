@@ -1,8 +1,23 @@
 <!-- wp:html -->
 <div class="WP_DEBUG">attachment.html</div>
 <!-- /wp:html -->
-<!-- wp:post-featured-image /-->
 
-<!-- wp:post-content /-->
+<!-- wp:template-part {"slug":"attachment-image","theme":"thisis"} /-->
+
+<!-- wp:group {"layout":{"inherit":true}} -->
+<div class="wp-block-group"><!-- wp:post-title {"backgroundColor":"vivid-cyan-blue","textColor":"background"} /-->
+
+    <!-- wp:heading {"level":3} -->
+    <h3>Caption</h3>
+    <!-- /wp:heading -->
+
+    <!-- wp:post-excerpt /-->
+
+    <!-- wp:heading {"level":3} -->
+    <h3>Description</h3>
+    <!-- /wp:heading -->
+
+    <!-- wp:post-content /--></div>
+<!-- /wp:group -->
 
 <!-- wp:template-part {"slug":"footer","theme":"thisis","style":{"color":{"background":"#f7f7f7"}},"textColor":"foreground","layout":{"inherit":true}} /-->

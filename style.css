@@ -85,3 +85,13 @@ div.wp-site-blocks > div.WP_DEBUG:first-of-type:hover {
     color: black;
 
 }
+
+
+.attachment h1.wp-block-post-title { position: absolute; z-index: 100; border: 1px solid green; width: 100%; height: 45px;
+margin: 0px; padding: 35px 0px 19px 30%; opacity: 0.8; background-color: #0693e3; color: #ffffff;
+text-shadow: 1px 1px #333333;}
+
+/**
+ Style the featured image - from [bw_field featured] to max width 100%
+ */
+img.featured { max-width: 100%; border-bottom: 1px solid grey; top: 40px; }
