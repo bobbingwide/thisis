@@ -34,3 +34,7 @@ h1 { margin-block-start: 0px; margin-block-end: 0px;}
 Override margin bottom added by Gutenberg inline styling
  */
 .wp-block-columns { margin-bottom: 0px;}
+
+li.current-menu-item  {
+    color: var( --wp--preset--color--current-menu ) !important;
+}
