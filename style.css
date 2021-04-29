@@ -95,3 +95,5 @@ text-shadow: 1px 1px #333333;}
  Style the featured image - from [bw_field featured] to max width 100%
  */
 img.featured { max-width: 100%; border-bottom: 1px solid grey; top: 40px; }
+
+li figure img { border: 1px solid grey; }
