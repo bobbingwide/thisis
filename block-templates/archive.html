@@ -1,0 +1,53 @@
+<!-- wp:html -->
+<div class="WP_DEBUG">archive.html</div>
+<!-- /wp:html -->
+
+<!-- wp:template-part {"slug":"header","theme":"thisis","layout":{"inherit":false,"contentSize":"100%"}} /-->
+
+<!-- wp:query-title {"type":"archive","textColor":"darker-gray"} /-->
+
+<!-- wp:group {"layout":{"inherit":true}} -->
+<div class="wp-block-group"><!-- wp:query {"queryId":7,"query":{"perPage":10,"pages":0,"offset":0,"postType":"post","categoryIds":[],"tagIds":[],"order":"desc","orderBy":"date","author":"","search":"","exclude":[],"sticky":"","inherit":true},"layout":{"type":"list"}} -->
+    <!-- wp:query-loop -->
+    <!-- wp:columns {"verticalAlignment":"center"} -->
+    <div class="wp-block-columns are-vertically-aligned-center"><!-- wp:column {"verticalAlignment":"center","width":"25%"} -->
+        <div class="wp-block-column is-vertically-aligned-center" style="flex-basis:25%"><!-- wp:post-featured-image {"isLink":true} /--></div>
+        <!-- /wp:column -->
+
+        <!-- wp:column {"verticalAlignment":"center","width":"75%"} -->
+        <div class="wp-block-column is-vertically-aligned-center" style="flex-basis:75%"><!-- wp:post-date /-->
+
+            <!-- wp:post-title {"isLink":true} /-->
+
+            <!-- wp:post-excerpt /-->
+
+            <!-- wp:post-hierarchical-terms {"term":"category"} /-->
+
+            <!-- wp:post-tags /--></div>
+        <!-- /wp:column --></div>
+    <!-- /wp:columns -->
+
+    <!-- wp:paragraph -->
+    <p></p>
+    <!-- /wp:paragraph -->
+
+    <!-- wp:paragraph -->
+    <p></p>
+    <!-- /wp:paragraph -->
+    <!-- /wp:query-loop -->
+
+    <!-- wp:query-pagination -->
+    <div class="wp-block-query-pagination"><!-- wp:query-pagination-previous /-->
+
+        <!-- wp:query-pagination-numbers /-->
+
+        <!-- wp:query-pagination-next /--></div>
+    <!-- /wp:query-pagination -->
+    <!-- /wp:query --></div>
+<!-- /wp:group -->
+
+<!-- wp:template-part {"slug":"footer","theme":"thisis","style":{"color":{"background":"#f7f7f7"}},"textColor":"foreground","layout":{"inherit":true}} /-->
+
+<!-- wp:paragraph -->
+<p></p>
+<!-- /wp:paragraph -->
