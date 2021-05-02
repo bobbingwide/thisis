@@ -96,7 +96,7 @@ Some photos used when creating content, logo(s) and favicon.
 * Fixed: screenshot should have been a .png file
 * Tested: With Gutenberg 10.4.2
 * Tested: With WordPress 5.7.1 and WordPress Multi Site
-* Tested: With PHP 8.0
+* Tested: With PHP 8.0, requires PHP 7.3
 
 # 0.1.0 
 * Added: Add intermediate files as potential patterns,https://github.com/bobbingwide/thisis/issues/1
