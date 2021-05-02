@@ -5,8 +5,8 @@ Author: Herb Miller
 Description: This is Full Site Editing. Experimental FSE demonstration theme
 Requires at least: 5.7.1
 Tested up to: 5.7.1
-Requires PHP: 7.4
-Version: 0.2.0
+Requires PHP: 7.3
+Version: 0.3.0
 License: GNU General Public License v2 or later
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
 Text Domain: thisis
@@ -93,7 +93,7 @@ div.wp-site-blocks > div.WP_DEBUG:first-of-type:hover {
  Style the title on the attachment template over the top of the image
  */
 .attachment h1.wp-block-post-title { position: absolute; z-index: 100; border: 1px solid green; width: 100%; height: 45px;
-margin: 0px; padding: 35px 0px 19px 30%; opacity: 0.8; background-color: #0693e3; color: #ffffff;
+margin: 0px; padding: 25px 0px 0px 30%; opacity: 0.8; background-color: #0693e3; color: #ffffff;
 text-shadow: 1px 1px #333333;}
 
 /**
