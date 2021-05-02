@@ -2,6 +2,10 @@
 
 /**
  * Add theme supports not yet supported by experimental-theme.json
+ *
+ * So far that's:
+ * - post-thumbnails
+ * - responsive-embeds
  */
 function thisis_support() {
 
@@ -18,7 +22,7 @@ function thisis_support() {
 	//add_theme_support( 'wp-block-styles' );
 
 	// Adding support for responsive embedded content.
-	//add_theme_support( 'responsive-embeds' );
+	add_theme_support( 'responsive-embeds' );
 
 	// Add support for editor styles.
 	//add_theme_support( 'editor-styles' );
