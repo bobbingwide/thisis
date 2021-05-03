@@ -17,7 +17,7 @@ Its original purpose was to help prepare "A guide to Full Site Editing, blocks a
 
 Requirements:
 1. Implement Full Site Editing
-2. Similar look and feel as wordpress.org
+2. Similar look and feel as wordpress.org, originally
 3. But suitable for using in a self guided presentation 
 4. To enable documentation of Full Site Editing resources
 5. Minimal PHP and CSS
@@ -31,15 +31,21 @@ IMPLEMENTED:
 
 The `block-templates` developed so far are:
 
+* 404.html -
 * archive.html - 
 * attachment.html -
+* front-page.html
 * index.htm - 
 * index.html -
 * page.htm -
+* page.html -
 * single-post.htm -
+* single-post.html - 
+
 
 The `block-template-parts` are:
 
+* 404.html -
 * abandoned-footer.htm
 * attachment-image.html
 * call-#5-query-quest.htm
@@ -48,8 +54,13 @@ The `block-template-parts` are:
 * header.html
 * main-body.htm
 * main-body.html
+* page-tree.html
+* post-footer-stuff.html
+* previous-next.html
 * quixote.htm
+* single-post-fields.html
 * template-part-2.html
+* template-part-3.html
 * template-part.html
 
 
@@ -68,6 +79,17 @@ A series of screenshots taken at different stages of the theme's development.
 - Used in a short introductory video.
 - The prototype video is on YouTube.
 
+ASSETS\IMAGES\IMAGINE:
+
+A series of screenshots taken for the new "This is Full Site Editing..." video.
+- Taken with Gutenberg 10.5.3
+- During the development of v0.3.0
+- Used in a better video on YouTube. 
+
+https://www.youtube.com/watch?v=xT5GOjSEOPg
+
+
+
 IMAGES:
 
 Some photos used when creating content, logo(s) and favicon.
@@ -84,6 +106,21 @@ See the template visualization: https://developer.wordpress.org/files/2014/10/Sc
 * Install and activate any pre-requisite plugins.
 
 == Change Log ==
+= 0.3.0 =
+* Added: Add 404 template,[github bobbingwide thisis issues 1]
+* Added: Add front-page template,[github bobbingwide thisis issues 1]
+* Added: Add new screenshots for the FSE is 'imagine' video slideshow,[github bobbingwide thisis issues 1]
+* Added: Add post-footer-stuff ( just Copyright at present ) to each template,[github bobbingwide thisis issues 1]
+* Added: Add template parts required by single-post template,[github bobbingwide thisis issues 1]
+* Added: Add the featured image for 'FSE is FREE'
+* Changed: Add latest posts to the front page template
+* Changed: Improve page template
+* Changed: Improve sidebar for page template
+* Changed: Lower the required PHP version to 7.3 for SiteGround hosting
+* Changed: Reduce padding on the attachment template's post title,[github bobbingwide thisis issues 10]
+* Changed: Support responsive-embeds for full width YouTube videos,[github bobbingwide thisis issues 16]
+* Tested: With Gutenberg 10.5.3
+
 = 0.2.0 = 
 * Added: Add some images for the footer with Mrs Eames font - including a new proposal for a motto
 * Added: Deliver templates and template parts as normal .html files,[github bobbingwide thisis issues 9]
@@ -133,7 +170,7 @@ For other articles see the [Fizzie theme's readme](https://github.com/bobbingwid
 For some other FSE themes see [WP-a2z FSE themes](https://blocks.wp-a2z.org/oik-themes)
 
 == Brief development history ==
-thisis is my third attempt to develop a theme using Full Site Editing.
+ThisIs... is my third attempt to develop a theme using Full Site Editing.
 It's the first one where I tried to use the Site Editor to build the theme.
 
 Some of the templates and template parts that I build are exported to `.htm` files.
