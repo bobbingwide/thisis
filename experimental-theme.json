@@ -136,7 +136,8 @@
         "text": "var( --wp--preset--color--foreground )",
         "link": "var( --wp--preset--color--link)"
       },
-      "typography": { }
+      "typography": { },
+      "padding": "0px"
     }
   }
 }
