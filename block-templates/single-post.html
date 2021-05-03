@@ -1,5 +1,5 @@
 <!-- wp:html -->
-<div class="WP_DEBUG">page.html</div>
+<div class="WP_DEBUG">single-post.html</div>
 <!-- /wp:html -->
 
 <!-- wp:template-part {"slug":"header","theme":"thisis","layout":{"inherit":false,"contentSize":"100%"}} /-->
@@ -12,22 +12,11 @@
   <!-- /wp:columns --></div>
 <!-- /wp:group -->
 
-<!-- wp:columns -->
-<div class="wp-block-columns"><!-- wp:column {"width":"66.66%"} -->
-  <div class="wp-block-column" style="flex-basis:66.66%"><!-- wp:template-part {"slug":"main-body","theme":"thisis","layout":{"inherit":true}} /--></div>
-  <!-- /wp:column -->
+<!-- wp:template-part {"slug":"previous-next","theme":"thisis"} /-->
 
-  <!-- wp:column {"width":"33.33%"} -->
-  <div class="wp-block-column" style="flex-basis:33.33%">
-    <!-- wp:template-part {"slug":"page-tree","theme":"thisis"} /-->
+<!-- wp:template-part {"slug":"main-body","theme":"thisis","layout":{"inherit":true}} /-->
 
-   </div>
-  <!-- /wp:column --></div>
-<!-- /wp:columns -->
-
-<!-- wp:paragraph -->
-<p></p>
-<!-- /wp:paragraph -->
+<!-- wp:template-part {"slug":"single-post-fields","theme":"thisis","layout":{"inherit":true}} /-->
 
 <!-- wp:template-part {"slug":"footer","theme":"thisis","style":{"color":{"background":"#f7f7f7"}},"textColor":"foreground","layout":{"inherit":true}} /-->
 <!-- wp:template-part {"slug":"post-footer-stuff","theme":"thisis"} /-->
