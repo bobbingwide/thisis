@@ -4,7 +4,7 @@ Donate link: https://www.oik-plugins.com/oik/oik-donate/
 Tags: blocks, FSE, Gutenberg, Full Site Editing
 Requires at least: 5.7
 Tested up to: 5.7.1
-Version: 0.1.0
+Version: 0.4.0
 License: GPLv2 or later
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
 
@@ -14,6 +14,8 @@ ThisIs... - experimental Full Site Editing
 ThisIs... an experimental theme attempting to implement Full Site Editing (FSE) with Gutenberg blocks.
 
 Its original purpose was to help prepare "A guide to Full Site Editing, blocks and themes".
+
+The live demo site for the theme is https://sneak-peek.me 
 
 Requirements:
 1. Implement Full Site Editing
@@ -25,7 +27,7 @@ Requirements:
 7. Templates and template parts to be provided 
 8. Additional templates and parts provided as patterns
 
-Contents:
+=== Contents: ===
 
 IMPLEMENTED:
 
@@ -34,11 +36,14 @@ The `block-templates` developed so far are:
 * 404.html -
 * archive.html - 
 * attachment.html -
+* category-faqs.html
+* category-fse-is.html
 * front-page.html
 * index.htm - 
 * index.html -
 * page.htm -
 * page.html -
+* search.html
 * single-post.htm -
 * single-post.html - 
 
@@ -63,38 +68,37 @@ The `block-template-parts` are:
 * template-part-3.html
 * template-part.html
 
-
 SAMPLES:
 
 
 The files provided as samples have a file extension of  `.htm`.
 These can be loaded as patterns using the experimental oik-patterns plugin. 
 
+=== ASSETS: Only in the GitHub version ===
 
-SCREENSHOTS:
+assets/featured-images
+
+Some photos used when creating content, logo(s) and favicon.
+
+The template visualization was copied from: https://developer.wordpress.org/files/2014/10/Screenshot-2019-01-23-00.20.04.png
+
+
+assets/imagine
+
+A series of screenshots taken for the new "This is Full Site Editing..." video.
+- Taken with Gutenberg 10.5.3
+- During the development of v0.3.0
+- Used in a the "ThisIs... Full Site Editing" video on YouTube. 
+
+https://www.youtube.com/watch?v=xT5GOjSEOPg
+
+assets/screenshots
 
 A series of screenshots taken at different stages of the theme's development.
 - Taken with Gutenberg 10.4.1
 - During the development of v0.1.0 and v0.2.0
 - Used in a short introductory video.
 - The prototype video is on YouTube.
-
-ASSETS\IMAGES\IMAGINE:
-
-A series of screenshots taken for the new "This is Full Site Editing..." video.
-- Taken with Gutenberg 10.5.3
-- During the development of v0.3.0
-- Used in a better video on YouTube. 
-
-https://www.youtube.com/watch?v=xT5GOjSEOPg
-
-
-
-IMAGES:
-
-Some photos used when creating content, logo(s) and favicon.
-
-See the template visualization: https://developer.wordpress.org/files/2014/10/Screenshot-2019-01-23-00.20.04.png
 
 == Installation ==
 
@@ -106,8 +110,20 @@ See the template visualization: https://developer.wordpress.org/files/2014/10/Sc
 * Install and activate any pre-requisite plugins.
 
 == Change Log ==
+= 0.4.0 = 
+* Added: Add Search template,[github bobbingwide thisis issues 20]
+* Added: Add category template for FSE is... posts,[github bobbingwide thisis issues 19]
+* Added: Add first version of a template to display FAQs,[github bobbingwide thisis issues 15]
+* Added: Implement navigation menu overrides to replace hardcoded links,[github bobbingwide thisis issues 18]
+* Changed: Add more screen captures for the website
+* Changed: Moved many images to assets so they're not in the runtime zip,[github bobbingwide thisis issues 21]
+* Changed: Re-enable links in the header template part,[github bobbingwide thisis issues 18]
+* Changed: Re-enable the template-part template part for the index template
+* Changed: Reset featured image to the default content width
+* Changed: Update footer template part menu and new images,[[github bobbingwide thisis issues 21]
+
 = 0.3.0 =
-* Added: Add 404 template,[github bobbingwide thisis issues 1]
+* Added: Add 404 template,[github bobbingwide thisis issues 17]
 * Added: Add front-page template,[github bobbingwide thisis issues 1]
 * Added: Add new screenshots for the FSE is 'imagine' video slideshow,[github bobbingwide thisis issues 1]
 * Added: Add post-footer-stuff ( just Copyright at present ) to each template,[github bobbingwide thisis issues 1]
@@ -151,13 +167,14 @@ See the template visualization: https://developer.wordpress.org/files/2014/10/Sc
 * Added: This is... probably the minimum mandatory content for an experimental FSE theme with Gutenberg 10.4.1,[github bobbingwide thisis issues 2]
 
 
-=== Block overrides ===
+== Block overrides ==
 thisis may contain a number of overrides to Gutenberg server rendered blocks which didn't behave the way I expected.
 These overrides should continue to work even when the PRs to fix the bugs have been implemented.
 
-These overrides may have been copied / cobbled from Fizzie and SB.
+These overrides may have been copied / cobbled from Fizzie and/or SB.
 
 * core/template-part - does not call `wpautop()`
+* core/navigation-link - changes hardcoded `https://s.b/wp55/thisis` to site_url()
 
 == References ==
 See my articles on herbmiller.me:
@@ -173,7 +190,7 @@ For some other FSE themes see [WP-a2z FSE themes](https://blocks.wp-a2z.org/oik-
 ThisIs... is my third attempt to develop a theme using Full Site Editing.
 It's the first one where I tried to use the Site Editor to build the theme.
 
-Some of the templates and template parts that I build are exported to `.htm` files.
+Some of the templates and template parts that I built are exported to `.htm` files.
 Since the file extensions are not `.html` then these files will not be found by the
 Site Editor until manually renamed.
 
@@ -187,11 +204,12 @@ The plugins upon which the template parts are dependent are:
 - sb-breadcrumbs-block
 - Yoast SEO
 
-The following plugins are also used during development:
+The following plugins are also used during development and cloning to the live site.
 - oik-bwtrace
 - oik-clone
 - oik-types
 - oik-patterns
+- oik-css
 
 == Copyright ==
 (C) Copyright Herb Miller, Bobbing Wide 2021
