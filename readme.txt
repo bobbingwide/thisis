@@ -4,7 +4,7 @@ Donate link: https://www.oik-plugins.com/oik/oik-donate/
 Tags: blocks, FSE, Gutenberg, Full Site Editing
 Requires at least: 5.7
 Tested up to: 5.7.1
-Version: 0.4.0
+Version: 0.5.0
 License: GPLv2 or later
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
 
@@ -38,11 +38,16 @@ The `block-templates` developed so far are:
 * attachment.html -
 * category-faqs.html
 * category-fse-is.html
-* front-page.html
+* featured-image-left.html
+* front-page.html -
+* full-width.html -
 * index.htm - 
 * index.html -
+* output-input.html -
 * page.htm -
 * page.html -
+* page-2.html - custom template for post ID 2
+* page-template-hierarchy.html - custom template for template-hierarchy
 * search.html
 * single-post.htm -
 * single-post.html - 
@@ -53,7 +58,9 @@ The `block-template-parts` are:
 * 404.html -
 * abandoned-footer.htm
 * attachment-image.html
+* body-only.html
 * call-#5-query-quest.htm
+* contents-shortcode.html - part of output-input
 * footer.html
 * header.htm
 * header.html
@@ -110,6 +117,14 @@ A series of screenshots taken at different stages of the theme's development.
 * Install and activate any pre-requisite plugins.
 
 == Change Log ==
+= 0.5.0 = 
+* Added: Custom templates,[#14](https://github.com/bobbingwide/thisis/issues/14)
+* Added: Query block override to order by rand,[#24](https://github.com/bobbingwide/thisis/issues/14)
+* Added: Add image for the template editor with top toolbar on a second line
+* Added: Add customTemplates prior to refactoring to theme.json version 1,[#24](https://github.com/bobbingwide/thisis/issues/24)
+* Changed: wp_global_styles.json may contain the right way to set padding,[#6](https://github.com/bobbingwide/thisis/issues/6)
+* Tested: With Gutenberg 10.5.4
+
 = 0.4.0 = 
 * Added: Add Search template,[github bobbingwide thisis issues 20]
 * Added: Add category template for FSE is... posts,[github bobbingwide thisis issues 19]
