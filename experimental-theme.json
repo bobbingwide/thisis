@@ -139,5 +139,28 @@
       "typography": { },
       "padding": "0px"
     }
-  }
+  },
+  "customTemplates": [
+    {
+      "name": "single-full",
+      "title": "Full width stuff",
+      "postTypes": [
+        "page",
+        "post",
+        "block",
+        "block_example"
+      ]
+    },
+    {
+      "name": "output-input",
+      "title": "Output Input Debugging",
+      "postTypes": [
+        "page",
+        "post",
+        "block",
+        "block_example"
+      ]
+    }
+  ]
+
 }
