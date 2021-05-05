@@ -1,0 +1,68 @@
+{
+  "isGlobalStylesUserThemeJSON": true,
+  "styles": {
+    "core/navigation": {
+      "typography": {
+        "fontSize": "13px",
+        "fontStyle": "normal",
+        "fontWeight": "700"
+      },
+      "color": {
+        "text": "#eeeeee"
+      }
+    },
+    "core/site-title": {
+      "typography": {
+        "fontSize": "36px"
+      },
+      "color": {
+        "text": "#eeeeee",
+        "link": "#eeeeee"
+      }
+    },
+    "core/site-tagline": {
+      "color": {
+        "text": "#ffffff"
+      },
+      "typography": {
+        "fontSize": "36px"
+      }
+    },
+    "root": {
+      "typography": {
+        "fontStyle": "normal",
+        "fontWeight": "500",
+        "fontFamily": "Open Sans, sans-serif"
+      },
+      "color": {
+        "text": "#616161",
+        "link": "#3498db"
+      }
+    },
+    "core/heading/h1": {
+      "color": {
+        "text": "#eeeeee"
+      }
+    },
+    "core/heading/h2": {
+      "color": {
+        "text": "#616161"
+      }
+    },
+    "core/template-part": {
+      "color": {
+        "link": "#3498db"
+      }
+    },
+    "core/cover": {
+      "spacing": {
+        "padding": {
+          "top": "100px",
+          "right": "100px",
+          "bottom": "100px",
+          "left": "100px"
+        }
+      }
+    }
+  }
+}
