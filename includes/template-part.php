@@ -72,11 +72,15 @@ function thisis_render_block_core_template_part( $attributes ) {
 
 	if ( is_null( $content ) && is_user_logged_in() ) {
 		//print_r( $attributes );
-		return sprintf(
-		/* translators: %s: Template part slug. */
-			__( 'Template part has been deleted or is unavailable: %s' ),
-			$attributes['slug']
-		);
+        if ( isset( $attributes['slug'])) {
+            return sprintf(
+            /* translators: %s: Template part slug. */
+                __('Template part has been deleted or is unavailable: %s'),
+                $attributes['slug']
+            );
+        } else {
+            return __('No slug given for template part block');
+        }
 	}
 
 	if ( isset( $seen_ids[ $template_part_id ] ) ) {
