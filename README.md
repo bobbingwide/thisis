@@ -5,7 +5,7 @@
 * Tags: blocks, FSE, Gutenberg, Full Site Editing
 * Requires at least: 5.7
 * Tested up to: 5.7.1
-* Version: 0.6.0
+* Version: 0.6.1
 * License: GPLv2 or later
 * License URI: http://www.gnu.org/licenses/gpl-2.0.html
 
@@ -19,14 +19,18 @@ Its original purpose was to help prepare "A guide to Full Site Editing, blocks a
 The live demo site for the theme is https://sneak-peek.me
 
 Requirements:
+
 1. Implement Full Site Editing
 2. Similar look and feel as wordpress.org, originally
-3. But suitable for using in a self guided presentation
-4. To enable documentation of Full Site Editing resources
+3. but suitable for using in a self guided presentation
+4. to enable documentation of Full Site Editing resources
 5. Minimal PHP and CSS
-6. Partly completed experimental-theme.json
+6. Partly completed theme.json
 7. Templates and template parts to be provided
 8. Additional templates and parts provided as patterns
+9. Use block plugins for functionality not yet supported
+10. or shortcodes when blocks are not yet available.
+
 
 * ### Contents: 
 
@@ -119,6 +123,9 @@ A series of screenshots taken at different stages of the theme's development.
 * Install and activate any pre-requisite plugins.
 
 ## Change Log 
+# 0.6.1 
+* Added: Add theme.json for Gutenberg 10.6.0-rc.1,[#23](https://github.com/bobbingwide/thisis/issues/23]
+
 # 0.6.0 
 * Added: Add post-meta-inline template part to display in single-post template,[#27]((https://github.com/bobbingwide/thisis/issues/27)
 * Changed: Support Gutenberg 10.6 - post_terms block replaces post-tags and post-hierarchical-terms,[#23](https://github.com/bobbingwide/thisis/issues/23)
@@ -223,23 +230,24 @@ Some of the templates and template parts that I built are exported to `.htm` fil
 Since the file extensions are not `.html` then these files will not be found by the
 Site Editor until manually renamed.
 
-Once again I've found the need to use shortcodes in template parts.
+Once again I've found the need to use shortcodes in some template parts.
 The plugins upon which the template parts are dependent are:
 
 - oik
+- oik-css
 - oik-fields
-- sb-children-block
-- sb-prevnext-block
 - sb-breadcrumbs-block
+- sb-children-block
 - sb-post-edit-block
-- Yoast SEO
+- sb-prevnext-block
+- Yoast SEO - used by sb-breadcrumbs-block
 
 The following plugins are also used during development and cloning to the live site.
 - oik-bwtrace
 - oik-clone
-- oik-types
 - oik-patterns
-- oik-css
+- oik-types
+
 
 ## Copyright 
 (C) Copyright Herb Miller, Bobbing Wide 2021
