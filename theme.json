@@ -139,6 +139,18 @@
     }
 
   },
+  "styles": {
+    "color": {
+      "text": "var(--wp--preset--color--foreground)"
+    },
+    "elements": {
+      "link": {
+        "color": {
+          "text": "var( --wp--preset--color--link)"
+        }
+      }
+    }
+  },
   "templateParts": [
     {
       "name": "header",
@@ -147,6 +159,33 @@
     {
       "name": "footer",
       "area": "footer"
+    }
+  ],
+  "customTemplates": [
+    {
+      "name": "featured-image-left",
+      "title": "Featured image left",
+      "postTypes": [
+        "page",
+        "post"
+      ]
+    },
+    {
+      "name": "full-width",
+      "title": "Full width stuff",
+      "postTypes": [
+        "page",
+        "post"
+
+      ]
+    },
+    {
+      "name": "output-input",
+      "title": "Output Input Debugging",
+      "postTypes": [
+        "page",
+        "post"
+      ]
     }
   ]
 }
