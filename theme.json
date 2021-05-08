@@ -143,10 +143,20 @@
     "color": {
       "text": "var(--wp--preset--color--foreground)"
     },
+    "typography": {
+      "fontFamily": "var(--wp--preset--font-family--opensans)"
+    },
     "elements": {
       "link": {
         "color": {
           "text": "var( --wp--preset--color--link)"
+        }
+      }
+    },
+    "blocks": {
+      "core/button": {
+        "border": {
+          "radius": "5px"
         }
       }
     }
