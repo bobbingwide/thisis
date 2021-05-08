@@ -1,6 +1,5 @@
 {
   "version": 1,
-
   "settings": {
     "border": {
       "customColor": true,
@@ -10,6 +9,8 @@
     },
     "color": {
       "custom": true,
+      "customGradient": true,
+      "duotone": [],
       "gradients": [ ],
       "link": true,
       "palette": [
@@ -75,21 +76,29 @@
           "color": "#ffffff"
         }]
     },
-        "typography": {
-        "customLineHeight": true,
-        "customFontWeight": true,
-        "customFontSize": true,
-        "fontFamilies": [
-          {
-            "fontFamily": "Open Sans, sans-serif",
-            "slug": "opensans"
-          },
-          {
-            "fontFamily": "Helvetica Neue, Helvetica, Arial, sans-serif",
-            "slug": "helvetica-arial"
-          }
-        ]
-      },
+    "custom": {},
+    "layout": {
+      "contentSize": "800px",
+      "wideSize": "1200px"
+    },
+    "spacing": {
+      "customPadding": true,
+      "units": [ "px", "em", "rem", "vh", "vw" ]
+    },
+    "typography": {
+      "customLineHeight": true,
+      "customFontWeight": true,
+      "customFontSize": true,
+      "fontFamilies": [
+        {
+          "fontFamily": "Open Sans, sans-serif",
+          "slug": "opensans"
+        },
+        {
+          "fontFamily": "Helvetica Neue, Helvetica, Arial, sans-serif",
+          "slug": "helvetica-arial"
+        }
+      ],
       "fontSizes": [
         {
           "name": "Tiny",
@@ -126,12 +135,10 @@
           "size": "36px",
           "slug": "largest"
         }
-      ],
-      "layout": {
-        "contentSize": "800px",
-        "wideSize": "1200px"
-      }
-    },
+      ]
+    }
+
+  },
   "templateParts": [
     {
       "name": "header",
