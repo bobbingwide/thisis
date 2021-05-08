@@ -4,7 +4,7 @@ Donate link: https://www.oik-plugins.com/oik/oik-donate/
 Tags: blocks, FSE, Gutenberg, Full Site Editing
 Requires at least: 5.7
 Tested up to: 5.7.1
-Version: 0.5.0
+Version: 0.6.0
 License: GPLv2 or later
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
 
@@ -60,20 +60,21 @@ The `block-template-parts` are:
 * attachment-image.html
 * body-only.html
 * call-#5-query-quest.htm
+* category-tag-clouds.html 
 * contents-shortcode.html - part of output-input
 * footer.html
 * header.htm
 * header.html
+* latest-posts.html
 * main-body.htm
 * main-body.html
 * page-tree.html
 * post-footer-stuff.html
 * previous-next.html
+* query-pagination.html
 * quixote.htm
 * single-post-fields.html
-* template-part-2.html
-* template-part-3.html
-* template-part.html
+* zzz.html
 
 SAMPLES:
 
@@ -117,6 +118,14 @@ A series of screenshots taken at different stages of the theme's development.
 * Install and activate any pre-requisite plugins.
 
 == Change Log ==
+= 0.6.0 = 
+* Added: Add post-meta-inline template part to display in single-post template,[#27]((https://github.com/bobbingwide/thisis/issues/27)
+* Changed: Support Gutenberg 10.6 - post_terms block replaces post-tags and post-hierarchical-terms,[#23](https://github.com/bobbingwide/thisis/issues/23)
+* Changed: Template part renames and add category-tag-clouds to most templates,[#26](https://github.com/bobbingwide/thisis/issues/26)
+* Fixed: Correct About & Contact links,[#18](https://github.com/bobbingwide/thisis/issues/18)
+* Fixed: Different message when slug attribute is not set,[#6](https://github.com/bobbingwide/thisis/issues/6)
+* Tested: With Gutenberg 10.6.0-rc.1 and 10.5.4 
+
 = 0.5.0 = 
 * Added: Custom templates,[#14](https://github.com/bobbingwide/thisis/issues/14)
 * Added: Query block override to order by rand,[#24](https://github.com/bobbingwide/thisis/issues/14)
@@ -190,8 +199,12 @@ These overrides may have been copied / cobbled from Fizzie and/or SB.
 
 * core/template-part - does not call `wpautop()`
 * core/navigation-link - changes hardcoded `https://s.b/wp55/thisis` to site_url()
+* query-loop - Adds support for orderby=rand
 
 == References ==
+
+- [sneak-peek.me - ThisIs... Full Site Editing](https://sneak-peek.me)
+
 See my articles on herbmiller.me:
 
 - [Localization of Full Site Editing themes](https://herbmiller.me/localization-of-full-site-editing-themes/)
@@ -217,6 +230,7 @@ The plugins upon which the template parts are dependent are:
 - sb-children-block
 - sb-prevnext-block
 - sb-breadcrumbs-block
+- sb-post-edit-block
 - Yoast SEO
 
 The following plugins are also used during development and cloning to the live site.
