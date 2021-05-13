@@ -5,7 +5,7 @@
 * Tags: blocks, FSE, Gutenberg, Full Site Editing
 * Requires at least: 5.7
 * Tested up to: 5.7.1
-* Version: 0.6.1
+* Version: 0.7.0
 * License: GPLv2 or later
 * License URI: http://www.gnu.org/licenses/gpl-2.0.html
 
@@ -123,6 +123,16 @@ A series of screenshots taken at different stages of the theme's development.
 * Install and activate any pre-requisite plugins.
 
 ## Change Log 
+# 0.7.0 
+* Changed: Set background colour to get a white background in the Site editor
+* Changed: Failed attempt to style the table using theme.json
+* Changed: Reduce font size for Copyright text
+* Changed: Remove unnecessary code for [post-edit] shortcode, replaced by oik-sb/sb-post-edit-block,[#29](https://github.com/bobbingwide/thisis/issues/29)
+* Changed: Replace [guts] shortcode by oik-bbw/wp block,[#27](https://github.com/bobbingwide/thisis/issues/27)
+* Fixed: Remove unwanted ss
+* Tested: With WordPress 5.7.1 and WordPress Multi Site
+* Tested: With Gutenberg 10.6.0
+
 # 0.6.1 
 * Added: Add theme.json for Gutenberg 10.6.0-rc.1,[#23](https://github.com/bobbingwide/thisis/issues/23]
 
