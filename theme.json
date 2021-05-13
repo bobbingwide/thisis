@@ -136,13 +136,26 @@
           "slug": "largest"
         }
       ]
+    },
+    "blocks": {
+      "core/table": {
+        "border": {
+          "customColor": true,
+          "customRadius": true,
+          "customStyle": true,
+          "customWidth": true
+        }
+      }
     }
+
 
   },
   "styles": {
     "color": {
-      "text": "var(--wp--preset--color--foreground)"
+      "text": "var(--wp--preset--color--foreground)",
+      "background": "var(--wp--preset--color--background)"
     },
+
     "typography": {
       "fontFamily": "var(--wp--preset--font-family--opensans)"
     },
@@ -157,7 +170,14 @@
       "core/button": {
         "border": {
           "radius": "5px"
-        }
+        },
+       "core/table": {
+          "border": {
+            "color": "green",
+            "width": "2px",
+            "style": "dashed"
+          }
+       }
       }
     }
   },
