@@ -170,6 +170,7 @@
       "core/button": {
         "border": {
           "radius": "5px"
+        }
         },
        "core/table": {
           "border": {
@@ -179,7 +180,6 @@
           }
        }
       }
-    }
   },
   "templateParts": [
     {
