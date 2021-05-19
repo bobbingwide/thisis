@@ -4,8 +4,8 @@
 * Donate link: https://www.oik-plugins.com/oik/oik-donate/
 * Tags: blocks, FSE, Gutenberg, Full Site Editing
 * Requires at least: 5.7
-* Tested up to: 5.7.1
-* Version: 0.7.0
+* Tested up to: 5.7.2
+* Version: 0.8.0
 * License: GPLv2 or later
 * License URI: http://www.gnu.org/licenses/gpl-2.0.html
 
@@ -123,6 +123,15 @@ A series of screenshots taken at different stages of the theme's development.
 * Install and activate any pre-requisite plugins.
 
 ## Change Log 
+# 0.8.0 
+* Changed: Serve footer images from sneak-peek.me. Add spacer above vertical menus
+* Changed: Add 'rendering_template_part' action for new debug div solution,[#11](https://github.com/bobbingwide/thisis/issues/11)
+* Changed: Implement tag-cloud block override using Additional CSS class name of number-nnn.,[#31](https://github.com/bobbingwide/thisis/issues/31)
+* Fixed: Move curly braces to fix semantics.,[#30](https://github.com/bobbingwide/thisis/issues/30)
+* Tested: With WordPress 5.7.2 and WordPress Multi Site
+* Tested: With Gutenberg 10.6.0
+
+
 # 0.7.0 
 * Changed: Set background colour to get a white background in the Site editor
 * Changed: Failed attempt to style the table using theme.json
