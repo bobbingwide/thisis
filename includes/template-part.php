@@ -12,7 +12,7 @@
  *
  * @return string The render.
  */
-function thisis_render_block_core_template_part( $attributes ) {
+function thisis_render_block_core_template_part( $attributes, $content, $block ) {
 	static $seen_ids = array();
 	bw_trace2();
 	bw_backtrace();
