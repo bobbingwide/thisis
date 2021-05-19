@@ -105,8 +105,14 @@ function thisis_render_block_core_template_part( $attributes, $content, $block )
 			'';
 	}
 
+
+
 	// Run through the actions that are typically taken on the_content.
 	$seen_ids[ $template_part_id ] = true;
+	/**
+	 * Tell sb-debug-block we're rendering a template part.
+	 */
+	do_action( 'rendering_template_part', $attributes, $seen_ids );
 	$content                       = do_blocks( $content );
 	unset( $seen_ids[ $template_part_id ] );
 	$content = wptexturize( $content );
@@ -131,6 +137,11 @@ function thisis_render_block_core_template_part( $attributes, $content, $block )
 		$html_tag = esc_attr( $attributes['tagName'] );
 	}
 	$wrapper_attributes = get_block_wrapper_attributes();
+
+	/**
+	 * Tell sb-debug-block we've finished rendering a template part.
+	 */
+	do_action( 'rendering_template_part', null, $seen_ids );
 
 	return "<$html_tag $wrapper_attributes>" . str_replace( ']]>', ']]&gt;', $content ) . "</$html_tag>";
 }
