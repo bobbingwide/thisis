@@ -138,6 +138,11 @@
       ]
     },
     "blocks": {
+      "core/paragraph": {
+        "color": {
+          "custom": true
+        }
+      },
       "core/table": {
         "border": {
           "customColor": true,
