@@ -14,19 +14,12 @@
  */
 function thisis_render_block_core_template_part( $attributes, $content, $block ) {
 	static $seen_ids = array();
-	bw_trace2();
-	bw_backtrace();
 
 	$template_part_id = null;
 	$content          = null;
 	$area             = WP_TEMPLATE_PART_AREA_UNCATEGORIZED;
 
-	if ( ! empty( $attributes['postId'] ) && get_post_status( $attributes['postId'] ) ) {
-		$template_part_id = $attributes['postId'];
-		// If we have a post ID and the post exists, which means this template part
-		// is user-customized, render the corresponding post content.
-		$content = get_post( $attributes['postId'] )->post_content;
-	} elseif (
+	if (
 		isset( $attributes['slug'] ) &&
 		isset( $attributes['theme'] ) &&
 		wp_get_theme()->get_stylesheet() === $attributes['theme']
@@ -68,50 +61,52 @@ function thisis_render_block_core_template_part( $attributes, $content, $block )
 		}
 	}
 
-	// bw_trace2( $content, "template part content", false, BW_TRACE_VERBOSE );
-
-	if ( is_null( $content ) && is_user_logged_in() ) {
-		//print_r( $attributes );
-        if ( isset( $attributes['slug'])) {
-            return sprintf(
-            /* translators: %s: Template part slug. */
-                __('Template part has been deleted or is unavailable: %s'),
-                $attributes['slug']
-            );
-        } else {
-            return __('No slug given for template part block');
+    if ( is_null( $content ) && is_user_logged_in() ) {
+        if ( ! isset( $attributes['slug'] ) ) {
+            // If there is no slug this is a placeholder and we dont want to return any message.
+            return;
         }
-	}
+        return sprintf(
+        /* translators: %s: Template part slug. */
+            __( 'Template part has been deleted or is unavailable: %s' ),
+            $attributes['slug']
+        );
+    }
 
-	if ( isset( $seen_ids[ $template_part_id ] ) ) {
-		if ( ! is_admin() ) {
-			trigger_error(
-				sprintf(
-				// translators: %s are the block attributes.
-					__( 'Could not render Template Part block with the attributes: <code>%s</code>. Block cannot be rendered inside itself.' ),
-					wp_json_encode( $attributes )
-				),
-				E_USER_WARNING
-			);
-		}
+    if ( isset( $seen_ids[ $template_part_id ] ) ) {
+        if ( ! is_admin() ) {
+            trigger_error(
+                sprintf(
+                // translators: %s are the block attributes.
+                    __( 'Could not render Template Part block with the attributes: <code>%s</code>. Block cannot be rendered inside itself.' ),
+                    wp_json_encode( $attributes )
+                ),
+                E_USER_WARNING
+            );
+        }
 
-		// WP_DEBUG_DISPLAY must only be honored when WP_DEBUG. This precedent
-		// is set in `wp_debug_mode()`.
-		$is_debug = defined( 'WP_DEBUG' ) && WP_DEBUG &&
-		            defined( 'WP_DEBUG_DISPLAY' ) && WP_DEBUG_DISPLAY;
-		return $is_debug ?
-			// translators: Visible only in the front end, this warning takes the place of a faulty block.
-			__( '[block rendering halted]' ) :
-			'';
-	}
+        // WP_DEBUG_DISPLAY must only be honored when WP_DEBUG. This precedent
+        // is set in `wp_debug_mode()`.
+        $is_debug = defined( 'WP_DEBUG' ) && WP_DEBUG &&
+            defined( 'WP_DEBUG_DISPLAY' ) && WP_DEBUG_DISPLAY;
+        return $is_debug ?
+            // translators: Visible only in the front end, this warning takes the place of a faulty block.
+            __( '[block rendering halted]' ) :
+            '';
+    }
 
-
-
-	// Run through the actions that are typically taken on the_content.
+    // Run through the actions that are typically taken on the_content.
 	$seen_ids[ $template_part_id ] = true;
-	/**
-	 * Tell sb-debug-block we're rendering a template part.
-	 */
+
+    /**
+     * Fires before/after the template part is rendered.
+     *
+     * Allows extensions to follow template part processing.
+     * Called before and after each template part is rendered.
+     *
+     * @param array|null $attributes The template part attributes. Null after rendering.
+     * @param array $seen_ids The current template part nesting.
+     */
 	do_action( 'rendering_template_part', $attributes, $seen_ids );
 	$content                       = do_blocks( $content );
 	unset( $seen_ids[ $template_part_id ] );
@@ -138,9 +133,8 @@ function thisis_render_block_core_template_part( $attributes, $content, $block )
 	}
 	$wrapper_attributes = get_block_wrapper_attributes();
 
-	/**
-	 * Tell sb-debug-block we've finished rendering a template part.
-	 */
+
+    /** This action is documented in template-part.php */
 	do_action( 'rendering_template_part', null, $seen_ids );
 
 	return "<$html_tag $wrapper_attributes>" . str_replace( ']]>', ']]&gt;', $content ) . "</$html_tag>";
