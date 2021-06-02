@@ -4,7 +4,7 @@ Donate link: https://www.oik-plugins.com/oik/oik-donate/
 Tags: blocks, FSE, Gutenberg, Full Site Editing
 Requires at least: 5.7
 Tested up to: 5.7.2
-Version: 0.8.0
+Version: 0.9.0
 License: GPLv2 or later
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
 
@@ -122,6 +122,16 @@ A series of screenshots taken at different stages of the theme's development.
 * Install and activate any pre-requisite plugins.
 
 == Change Log ==
+= 0.9.0 = 
+* Changed: Enable custom color for core/paragraph
+* Changed: Update thisis_render_block_core_template_part to more closely match gutenberg's version, incl. the docblocks for do_action.
+* Changed: Replace custom HTML div WP_DEBUG with oik-sb/sb-debug-block. Issue #11
+* Changed: Add page list inside a vertical navigation block. Issue #32
+* Changed: Update for Gutenberg 10.7. Issue #32
+* Changed: Add demo template parts - reflecting changes made during the presentation on 19th May then undone
+* Tested: With WordPress 5.7.2 and WordPress Multi Site
+* Tested: With Gutenberg 10.7.1
+
 = 0.8.0 = 
 * Changed: Serve footer images from sneak-peek.me. Add spacer above vertical menus
 * Changed: Add 'rendering_template_part' action for new debug div solution,[#11](https://github.com/bobbingwide/thisis/issues/11)
