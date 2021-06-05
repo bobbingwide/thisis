@@ -4,7 +4,7 @@ Donate link: https://www.oik-plugins.com/oik/oik-donate/
 Tags: blocks, FSE, Gutenberg, Full Site Editing
 Requires at least: 5.7
 Tested up to: 5.7.2
-Version: 0.9.0
+Version: 0.9.1
 License: GPLv2 or later
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
 
@@ -122,6 +122,10 @@ A series of screenshots taken at different stages of the theme's development.
 * Install and activate any pre-requisite plugins.
 
 == Change Log ==
+= 0.9.1 =
+* Changed: Make latest-posts full width, with a featured image below the date and spacer at the top. Issue #32 
+* Tested: With Gutenberg 10.7.1 and nightly build 10.8.0.20210601 
+
 = 0.9.0 = 
 * Changed: Enable custom color for core/paragraph
 * Changed: Update thisis_render_block_core_template_part to more closely match gutenberg's version, incl. the docblocks for do_action.
