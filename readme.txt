@@ -4,7 +4,7 @@ Donate link: https://www.oik-plugins.com/oik/oik-donate/
 Tags: blocks, FSE, Gutenberg, Full Site Editing
 Requires at least: 5.7
 Tested up to: 5.7.2
-Version: 0.9.1
+Version: 0.9.2
 License: GPLv2 or later
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
 
@@ -39,10 +39,12 @@ The `block-templates` developed so far are:
 
 * 404.html -
 * archive.html - 
+* archive-demo.html
 * attachment.html -
 * category-faqs.html
 * category-fse-is.html
 * featured-image-left.html
+* front-page-demo.html
 * front-page.html -
 * full-width.html -
 * index.htm - 
@@ -52,14 +54,17 @@ The `block-templates` developed so far are:
 * page.html -
 * page-2.html - custom template for post ID 2
 * page-template-hierarchy.html - custom template for template-hierarchy
+* portfolio.html
 * search.html
 * single-post.htm -
 * single-post.html - 
+* single-post-no-featured-image.html
 
 
 The `block-template-parts` are:
 
 * 404.html -
+* 404-demo.html
 * abandoned-footer.htm
 * attachment-image.html
 * body-only.html
@@ -72,6 +77,7 @@ The `block-template-parts` are:
 * latest-posts.html
 * main-body.htm
 * main-body.html
+* main-body-no-featured-image.html
 * page-tree.html
 * post-footer-stuff.html
 * previous-next.html
@@ -122,6 +128,11 @@ A series of screenshots taken at different stages of the theme's development.
 * Install and activate any pre-requisite plugins.
 
 == Change Log ==
+= 0.9.2 = 
+* Added: Add portfolio and single-post-no-featured-image to custom templates
+* Added: Add templates for fse-outreach-experiment call 7: Portfolio
+* Tested: With Gutenberg 10.8.0
+
 = 0.9.1 =
 * Changed: Make latest-posts full width, with a featured image below the date and spacer at the top. Issue #32 
 * Tested: With Gutenberg 10.7.1 and nightly build 10.8.0.20210601 
