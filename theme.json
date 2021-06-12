@@ -35,7 +35,7 @@
         },
         {
           "slug": "site-header-background",
-          "name": "Blue",
+          "name": "Blue (site header background) ",
           "color": "#0073aa"
         },
         {
@@ -217,6 +217,22 @@
     {
       "name": "output-input",
       "title": "Output Input Debugging",
+      "postTypes": [
+        "page",
+        "post"
+      ]
+    },
+    {
+      "name": "portfolio",
+      "title": "Portfolio (html)",
+      "postTypes": [
+        "page",
+        "post"
+      ]
+    },
+    {
+      "name": "single-post-no-featured-image",
+      "title": "Single Post - No Featured image",
       "postTypes": [
         "page",
         "post"
