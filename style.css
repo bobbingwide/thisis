@@ -137,3 +137,11 @@ Add CSS to prevent large and full sized images from losing their aspect ratio
 .is-dark-theme .wp-block-table figcaption {
     color: rgba(255, 255, 255, 0.65);
 }
+
+.wp-block-media-text__media img, .wp-block-media-text__media video {
+    height: auto;
+}
+
+.wp-block-navigation img {
+    height: auto;
+}
