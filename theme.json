@@ -82,13 +82,18 @@
       "wideSize": "1200px"
     },
     "spacing": {
+      "customMargin": true,
       "customPadding": true,
       "units": [ "px", "em", "rem", "vh", "vw" ]
     },
     "typography": {
-      "customLineHeight": true,
+      "customFontSize": false,
+      "customFontStyle": true,
       "customFontWeight": true,
-      "customFontSize": true,
+      "customLineHeight": false,
+      "customTextDecorations": true,
+      "customTextTransforms": true,
+      "dropCap": false,
       "fontFamilies": [
         {
           "fontFamily": "Open Sans, sans-serif",
@@ -138,6 +143,21 @@
       ]
     },
     "blocks": {
+      "core/button": {
+        "border": {
+          "customColor": true,
+          "customRadius": true,
+          "customStyle": false,
+          "customWidth": true
+        },
+        "color": {
+          "custom": false
+        },
+        "typography": {
+          "customFontSize": true,
+          "customLineHeight": true
+        }
+      },
       "core/paragraph": {
         "color": {
           "custom": true
