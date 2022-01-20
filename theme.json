@@ -1,5 +1,5 @@
 {
-  "version": 1,
+  "version": 2,
   "settings": {
     "appearanceTools": true,
     "border": {
@@ -96,7 +96,8 @@
           "em",
           "rem",
           "vh",
-          "vw"
+          "vw",
+          "%"
         ]
       },
       "typography": {
