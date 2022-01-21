@@ -4,7 +4,7 @@ Donate link: https://www.oik-plugins.com/oik/oik-donate/
 Tags: blocks, FSE, Gutenberg, Full Site Editing
 Requires at least: 5.7
 Tested up to: 5.7.2
-Version: 0.9.2
+Version: 1.0.0
 License: GPLv2 or later
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
 
@@ -120,7 +120,7 @@ A series of screenshots taken at different stages of the theme's development.
 
 == Installation ==
 
-* Either install Gutenberg 10.4.1 or higher from wordpress.org 
+* Either install Gutenberg 11.0.0 or higher from wordpress.org 
 * or install the Gutenberg nightly version of the plugin
 * or install and build the latest Gutenberg source.
 * Activate Gutenberg.
@@ -128,6 +128,15 @@ A series of screenshots taken at different stages of the theme's development.
 * Install and activate any pre-requisite plugins.
 
 == Change Log ==
+= 1.0.0 =
+* Changed: Enable custom margin, adjust typography settings, define settings for core/button
+* Fixed: Prevent images from stretching
+* Changed: Change query-loop to post-template #33
+* Changed: Override post-template but not query-loop #33
+* Changed: Override post-template to support orderby rand #33
+* Changed: Remove border around featured images; only gallery images
+* Tested: With Gutenberg 11.0.0
+
 = 0.9.2 = 
 * Added: Add portfolio and single-post-no-featured-image to custom templates
 * Added: Add templates for fse-outreach-experiment call 7: Portfolio
@@ -154,7 +163,6 @@ A series of screenshots taken at different stages of the theme's development.
 * Fixed: Move curly braces to fix semantics.,[#30](https://github.com/bobbingwide/thisis/issues/30)
 * Tested: With WordPress 5.7.2 and WordPress Multi Site
 * Tested: With Gutenberg 10.6.0
-
 
 = 0.7.0 = 
 * Changed: Set background colour to get a white background in the Site editor
