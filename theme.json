@@ -85,7 +85,7 @@
         "outer": "var(--wp--custom--spacing--small, 1.25rem)"
       }
     }, "layout": {
-      "contentSize": "800px",
+      "contentSize": "1200px",
       "wideSize": "1200px"
     },
       "spacing": {
