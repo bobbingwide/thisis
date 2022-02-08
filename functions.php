@@ -13,7 +13,7 @@ function thisis_support() {
 	 *
 	 * @link https://developer.wordpress.org/themes/functionality/featured-images-post-thumbnails/
 	 */
-	add_theme_support( 'post-thumbnails' );
+	//add_theme_support( 'post-thumbnails' );
 	// Adding support for alignwide and alignfull classes in the block editor.
 	//add_theme_support( 'align-wide' );
 
