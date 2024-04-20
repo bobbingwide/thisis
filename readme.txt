@@ -3,7 +3,7 @@ Contributors: bobbingwide, vsgloik
 Donate link: https://www.oik-plugins.com/oik/oik-donate/
 Tags: blocks, FSE, Gutenberg, Full Site Editing
 Requires at least: 5.7
-Tested up to: 5.7.2
+Tested up to: 5.9.3
 Version: 1.0.0
 License: GPLv2 or later
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
@@ -129,13 +129,39 @@ A series of screenshots taken at different stages of the theme's development.
 
 == Change Log ==
 = 1.0.0 =
+* Added: Add heading for Search results #20
+* Changed: Implement post-title template part #35
+* Changed: 404: wrap in group #35
+* Changed: We don't need add_theme_support for post-thumbnails #4
+* Changed: page.html: Remove layout attributes from template-part blocks #35
+* Changed: index.html: remove layout attributes #35
+* Changed: Remove cloned and clone shortcodes #35
+* Changed: Update query block for 3 columns #35
+* Changed: Update Copyright years. Add cloned and clone shortcodes #35
+* Changed: main-body: wrap in group for content width #35
+* Changed: Create 4 columns with light grey background and vertical menus with a bit of padding #35
+* Changed: Set contentSize to same as wideSize. from 800px to 1200px #35
+* Changed: Change to use parts not block-template-parts #35
+* Changed: Rename folders for templates and parts #35
+* Changed: Remove theme attribute from template part blocks #35
+* Changed: Add buttons menu pattern. Remove theme attribute. #35
+* Changed: Move all .htm files to patterns and rename to .html #
+* Changed: Update readme for v1.0.0
+* Changed: Rework for WordPress 5.9 #35
+* Changed: set version to 2, add custom.spacing.units of % #35
+* Changed: Add support for block styles and enqueue editor styles #35
+* Changed: Set apiversion 2, add appearanceTools: true, add custom spacing, set spacing.blockGap to 0.5rem #35
+* Changed: Remove unwanted margin-top on the debug block #35
+* Changed: Change oik-bbw/wp g attribute to bool #28
 * Changed: Enable custom margin, adjust typography settings, define settings for core/button
 * Fixed: Prevent images from stretching
 * Changed: Change query-loop to post-template #33
 * Changed: Override post-template but not query-loop #33
 * Changed: Override post-template to support orderby rand #33
 * Changed: Remove border around featured images; only gallery images
-* Tested: With Gutenberg 11.0.0
+* TestedL With WordPress 5.9.3 and WordPress Multi Site
+* Tested: With Gutenberg 13.2.0
+* Tested: With PHP 8.0
 
 = 0.9.2 = 
 * Added: Add portfolio and single-post-no-featured-image to custom templates
